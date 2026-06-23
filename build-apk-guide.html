@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>راهنمای ساخت APK اندروید | گرداب ثروت ونیزان</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #fff;
+    padding: 16px;
+    line-height: 1.9;
+  }
+  .container { max-width: 920px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 35px 20px;
+    background: radial-gradient(circle at top, rgba(255,215,0,0.08), transparent), linear-gradient(135deg, #1a1a1a, #0a0a0a);
+    border-radius: 24px;
+    border: 2px solid #DAA520;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 2.2em;
+    background: linear-gradient(90deg, #FFD700, #FFF8DC, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .subtitle { color: #DAA520; font-size: 1em; }
+  .method-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    color: #0a0a0a;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 0.85em;
+    margin: 8px 0;
+  }
+  .easy { background: linear-gradient(135deg, #10B981, #059669); color: #fff; }
+  .medium { background: linear-gradient(135deg, #FFD700, #DAA520); color: #0a0a0a; }
+  .pro { background: linear-gradient(135deg, #8B5CF6, #6D28D9); color: #fff; }
+  .method {
+    background: rgba(255, 215, 0, 0.04);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 22px;
+  }
+  .method h2 { color: #FFD700; margin-bottom: 8px; font-size: 1.5em; display: flex; align-items: center; gap: 10px; }
+  .step-num {
+    display: inline-flex;
+    width: 34px; height: 34px;
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    color: #0a0a0a;
+    border-radius: 50%;
+    align-items: center; justify-content: center;
+    font-weight: 900;
+    margin-left: 8px;
+    flex-shrink: 0;
+  }
+  ol, ul { padding-right: 22px; margin: 12px 0; }
+  li { margin-bottom: 12px; }
+  code {
+    background: #000;
+    color: #FFD700;
+    padding: 3px 9px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    direction: ltr;
+    display: inline-block;
+    font-size: 0.9em;
+  }
+  pre {
+    background: #000;
+    color: #4ade80;
+    padding: 16px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 12px 0;
+    direction: ltr;
+    text-align: left;
+    border: 1px solid #333;
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+  pre .comment { color: #6b7280; }
+  a { color: #FFD700; font-weight: 700; }
+  .highlight {
+    background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(5,150,105,0.08));
+    border: 2px solid #10B981;
+    border-radius: 16px;
+    padding: 22px;
+    margin: 24px 0;
+  }
+  .warning {
+    background: rgba(245, 158, 11, 0.1);
+    border-right: 4px solid #F59E0B;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin: 14px 0;
+    font-size: 0.92em;
+  }
+  .tip {
+    background: rgba(16, 185, 129, 0.1);
+    border-right: 4px solid #10B981;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin: 14px 0;
+    font-size: 0.92em;
+  }
+  .step-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 18px;
+  }
+  .step-content { flex: 1; }
+  .step-content h3 { color: #FFD700; font-size: 1.1em; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { padding: 12px; text-align: right; border-bottom: 1px solid rgba(255,215,0,0.15); }
+  th { color: #FFD700; font-size: 0.9em; }
+  td { color: #ddd; font-size: 0.88em; }
+  .footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    border-top: 2px solid #DAA520;
+    color: #DAA520;
+  }
+  .big-link {
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    color: #0a0a0a;
+    padding: 18px;
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 16px 0;
+    box-shadow: 0 8px 24px rgba(255,215,0,0.2);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>📱 راهنمای ساخت APK اندروید</h1>
+  <p class="subtitle">گرداب ثروت ونیزان | vanizan.com</p>
+  <p style="margin-top:12px; color:#aaa; font-size:0.9em;">سه روش از ساده تا حرفه‌ای برای تبدیل اپلیکیشن به فایل نصبی اندروید</p>
+</header>
+
+<div class="highlight">
+  <h2 style="color:#10B981; margin-bottom:12px;">⚡ سریع‌ترین راه (پیشنهاد ما)</h2>
+  <p>اپلیکیشن شما یک <b>PWA کامل</b> است. ساده‌ترین راه ساخت APK، استفاده از سرویس آنلاین <b>PWABuilder</b> مایکروسافت است که فقط چند دقیقه طول می‌کشد و نیازی به نصب هیچ نرم‌افزاری ندارد.</p>
+  <a class="big-link" href="https://www.pwabuilder.com" target="_blank">🚀 رفتن به PWABuilder.com</a>
+</div>
+
+<!-- روش 1: PWABuilder -->
+<div class="method">
+  <span class="method-badge easy">روش ۱ — آسان (بدون کدنویسی)</span>
+  <h2>🌐 ساخت APK با PWABuilder</h2>
+  <p style="color:#bbb; margin-bottom:16px;">مناسب برای همه — فقط مرورگر لازم است</p>
+
+  <div class="step-block">
+    <span class="step-num">۱</span>
+    <div class="step-content">
+      <h3>آپلود سایت روی vanizan.com</h3>
+      <p>ابتدا فایل‌های پوشه <code>dist</code> را روی هاست خود با <b>HTTPS</b> آپلود کنید. (HTTPS برای PWA الزامی است)</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۲</span>
+    <div class="step-content">
+      <h3>ورود به PWABuilder</h3>
+      <p>به سایت <a href="https://www.pwabuilder.com" target="_blank">pwabuilder.com</a> بروید و آدرس <code>https://vanizan.com</code> را وارد کنید و روی <b>Start</b> بزنید.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۳</span>
+    <div class="step-content">
+      <h3>بررسی امتیاز PWA</h3>
+      <p>سایت به‌صورت خودکار manifest و service worker را بررسی می‌کند. باید امتیاز بالایی بگیرید (اپ شما همه موارد را دارد ✅).</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۴</span>
+    <div class="step-content">
+      <h3>دانلود پکیج اندروید</h3>
+      <p>روی <b>Package For Stores</b> → بخش <b>Android</b> → دکمه <b>Generate Package</b> کلیک کنید.</p>
+      <div class="tip">💡 دو گزینه دارید: <b>«Test Package»</b> برای نصب مستقیم (APK) و <b>«Production»</b> برای گوگل پلی (AAB).</div>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۵</span>
+    <div class="step-content">
+      <h3>نصب روی گوشی</h3>
+      <p>فایل <code>.apk</code> را در گوشی اندروید باز کنید و نصب کنید. (ممکن است نیاز باشد «نصب از منابع ناشناس» را فعال کنید)</p>
+    </div>
+  </div>
+</div>
+
+<!-- روش 2: Bubblewrap -->
+<div class="method">
+  <span class="method-badge medium">روش ۲ — متوسط (خط فرمان)</span>
+  <h2>🫧 ساخت APK با Bubblewrap (رسمی گوگل)</h2>
+  <p style="color:#bbb; margin-bottom:16px;">ابزار رسمی گوگل برای ساخت TWA — کنترل کامل</p>
+
+  <div class="step-block">
+    <span class="step-num">۱</span>
+    <div class="step-content">
+      <h3>پیش‌نیازها</h3>
+      <p>نصب <a href="https://nodejs.org" target="_blank">Node.js</a> و <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">JDK 17</a></p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۲</span>
+    <div class="step-content">
+      <h3>نصب Bubblewrap</h3>
+      <pre>npm install -g @bubblewrap/cli</pre>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۳</span>
+    <div class="step-content">
+      <h3>راه‌اندازی پروژه</h3>
+      <pre>bubblewrap init --manifest https://vanizan.com/manifest.json</pre>
+      <p style="font-size:0.9em; color:#aaa;">فایل <code>twa-manifest.json</code> آماده در پروژه را می‌توانید جایگزین کنید.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۴</span>
+    <div class="step-content">
+      <h3>ساخت APK</h3>
+      <pre>bubblewrap build</pre>
+      <p>فایل‌های <code>app-release-signed.apk</code> و <code>app-release-bundle.aab</code> ساخته می‌شوند.</p>
+    </div>
+  </div>
+
+  <div class="warning">⚠️ برای TWA باید فایل <code>assetlinks.json</code> را در مسیر <code>vanizan.com/.well-known/assetlinks.json</code> قرار دهید تا نوار آدرس مرورگر مخفی شود. (Bubblewrap راهنمایی می‌کند)</div>
+</div>
+
+<!-- روش 3: Capacitor -->
+<div class="method">
+  <span class="method-badge pro">روش ۳ — حرفه‌ای (Capacitor)</span>
+  <h2>⚡ ساخت APK با Capacitor</h2>
+  <p style="color:#bbb; margin-bottom:16px;">برای دسترسی به امکانات بومی اندروید (نوتیفیکیشن، فایل، و...) — اپ کاملاً آفلاین</p>
+
+  <div class="step-block">
+    <span class="step-num">۱</span>
+    <div class="step-content">
+      <h3>نصب Capacitor</h3>
+      <pre><span class="comment"># در پوشه پروژه</span>
+npm install @capacitor/core @capacitor/cli
+npm install @capacitor/android
+npx cap init</pre>
+      <p style="font-size:0.9em; color:#aaa;">فایل <code>capacitor.config.json</code> آماده در پروژه موجود است.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۲</span>
+    <div class="step-content">
+      <h3>ساخت نسخه وب + افزودن اندروید</h3>
+      <pre>npm run build
+npx cap add android
+npx cap sync</pre>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۳</span>
+    <div class="step-content">
+      <h3>باز کردن در Android Studio</h3>
+      <pre>npx cap open android</pre>
+      <p>پروژه در <a href="https://developer.android.com/studio" target="_blank">Android Studio</a> باز می‌شود.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <span class="step-num">۴</span>
+    <div class="step-content">
+      <h3>ساخت APK نهایی</h3>
+      <p>در Android Studio: منوی <b>Build</b> → <b>Build Bundle(s) / APK(s)</b> → <b>Build APK(s)</b></p>
+      <p style="font-size:0.9em; color:#aaa;">فایل APK در مسیر <code>android/app/build/outputs/apk/</code> ساخته می‌شود.</p>
+    </div>
+  </div>
+
+  <div class="tip">💎 با Capacitor اپلیکیشن کاملاً <b>آفلاین</b> کار می‌کند و نیازی به سرور یا اینترنت ندارد!</div>
+</div>
+
+<!-- مقایسه روش‌ها -->
+<div class="method">
+  <h2>📊 مقایسه روش‌ها</h2>
+  <table>
+    <tr>
+      <th>روش</th>
+      <th>سختی</th>
+      <th>زمان</th>
+      <th>آفلاین</th>
+      <th>نیاز به سرور</th>
+    </tr>
+    <tr>
+      <td>🌐 PWABuilder</td>
+      <td>⭐ آسان</td>
+      <td>۵ دقیقه</td>
+      <td>تا حدی</td>
+      <td>بله (vanizan.com)</td>
+    </tr>
+    <tr>
+      <td>🫧 Bubblewrap</td>
+      <td>⭐⭐ متوسط</td>
+      <td>۲۰ دقیقه</td>
+      <td>تا حدی</td>
+      <td>بله (vanizan.com)</td>
+    </tr>
+    <tr>
+      <td>⚡ Capacitor</td>
+      <td>⭐⭐⭐ حرفه‌ای</td>
+      <td>۳۰ دقیقه</td>
+      <td>✅ کامل</td>
+      <td>خیر (مستقل)</td>
+    </tr>
+  </table>
+</div>
+
+<!-- انتشار -->
+<div class="method">
+  <h2>🚀 انتشار در فروشگاه‌ها</h2>
+  <ul>
+    <li><b>☕ کافه بازار:</b> فایل APK را در <a href="https://pishkhan.cafebazaar.ir" target="_blank">pishkhan.cafebazaar.ir</a> آپلود کنید</li>
+    <li><b>📦 مایکت:</b> در <a href="https://panel.myket.ir" target="_blank">panel.myket.ir</a> ثبت کنید</li>
+    <li><b>▶️ گوگل پلی:</b> فایل AAB را در <a href="https://play.google.com/console" target="_blank">Play Console</a> (هزینه ۲۵$ یکبار) آپلود کنید</li>
+    <li><b>🌐 سایت خودتان:</b> APK را مستقیماً برای دانلود روی vanizan.com قرار دهید</li>
+  </ul>
+</div>
+
+<div class="highlight">
+  <h2 style="color:#10B981; margin-bottom:12px;">✅ همه چیز آماده است!</h2>
+  <p>اپلیکیشن شما تمام نیازمندی‌های یک PWA کامل را دارد:</p>
+  <ul style="list-style:none; padding-right:0; margin-top:10px;">
+    <li>✓ manifest.json کامل با آیکون‌ها</li>
+    <li>✓ Service Worker برای کارکرد آفلاین</li>
+    <li>✓ آیکون‌های 192x192 و 512x512</li>
+    <li>✓ Splash Screen زیبا</li>
+    <li>✓ تنظیمات Capacitor و TWA آماده</li>
+    <li>✓ پشتیبانی کامل از RTL و فارسی</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p style="font-size:1.3em; margin-bottom:8px;">💎 گرداب ثروت ونیزان 💎</p>
+  <p>vanizan.com | موفقیت و ثروت شما آرزوی ماست</p>
+  <p style="margin-top:14px; font-size:0.85em;">نسخه 1.0.0 — 2025</p>
+</div>
+
+</div>
+</body>
+</html>

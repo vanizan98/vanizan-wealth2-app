@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>راهنمای انتشار گرداب ثروت ونیزان</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #fff;
+    padding: 20px;
+    line-height: 1.8;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border-radius: 20px;
+    border: 2px solid #DAA520;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #FFD700, #FFF8DC, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+  .subtitle { color: #DAA520; font-size: 1.1em; }
+  .step {
+    background: rgba(255, 215, 0, 0.05);
+    border-right: 4px solid #DAA520;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+  }
+  .step-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #FFD700, #DAA520);
+    color: #0a0a0a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 900;
+    margin-left: 10px;
+  }
+  .step h2 { color: #FFD700; margin-bottom: 15px; font-size: 1.4em; }
+  .step p { margin-bottom: 10px; color: #eee; }
+  code {
+    background: #1a1a1a;
+    color: #FFD700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    direction: ltr;
+    display: inline-block;
+  }
+  pre {
+    background: #0a0a0a;
+    color: #FFD700;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 10px 0;
+    direction: ltr;
+    text-align: left;
+    border: 1px solid #DAA520;
+  }
+  ul { padding-right: 25px; }
+  li { margin-bottom: 8px; }
+  a { color: #FFD700; }
+  .highlight {
+    background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(218,165,32,0.1));
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 30px 0;
+  }
+  .platform {
+    display: inline-block;
+    background: rgba(255,215,0,0.1);
+    color: #FFD700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9em;
+    border: 1px solid #DAA520;
+  }
+  .footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 2px solid #DAA520;
+    color: #DAA520;
+  }
+  .tip {
+    background: rgba(16, 185, 129, 0.1);
+    border-right: 4px solid #10B981;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>💎 راهنمای انتشار گرداب ثروت ونیزان</h1>
+  <p class="subtitle">مراحل کامل انتشار در گوگل پلی، کافه بازار، مایکت و شبکه‌های اجتماعی</p>
+</header>
+
+<div class="highlight">
+  <h2 style="color:#FFD700;margin-bottom:15px;">🎯 اپلیکیشن شما به صورت PWA ساخته شده!</h2>
+  <p>این یک <b>Progressive Web App</b> است که می‌تواند روی هر دستگاهی (موبایل، تبلت، دسکتاپ) به صورت اپلیکیشن واقعی نصب شود.</p>
+  <div style="margin-top:15px;">
+    <span class="platform">📱 اندروید</span>
+    <span class="platform">🍎 iOS</span>
+    <span class="platform">💻 ویندوز</span>
+    <span class="platform">🌐 وب</span>
+  </div>
+</div>
+
+<!-- روش 1: انتشار روی سایت -->
+<div class="step">
+  <h2><span class="step-number">1</span>انتشار روی سایت vanizan.com</h2>
+  <p>ساده‌ترین راه انتشار، آپلود فایل‌ها روی سایت خودتانه:</p>
+  <ul>
+    <li>از طریق هاست cPanel، فایل‌های پوشه <code>dist</code> رو آپلود کنید</li>
+    <li>یا با FTP به سرور vanizan.com متصل بشید</li>
+    <li>یا از Git + Vercel/Netlify استفاده کنید</li>
+  </ul>
+  <div class="tip">💡 بعد از آپلود، کاربران می‌تونن آدرس <code>vanizan.com</code> رو باز کنن و روی "افزودن به صفحه اصلی" بزنن تا اپ نصب بشه!</div>
+</div>
+
+<!-- روش 2: انتشار در گوگل پلی -->
+<div class="step">
+  <h2><span class="step-number">2</span>انتشار در گوگل پلی (Google Play)</h2>
+  
+  <h3 style="color:#FFD700;margin:15px 0 10px;">الف) تبدیل PWA به APK با PWABuilder</h3>
+  <ol>
+    <li>به سایت <a href="https://www.pwabuilder.com" target="_blank">pwabuilder.com</a> برید</li>
+    <li>آدرس <code>https://vanizan.com</code> رو وارد کنید</li>
+    <li>گزینه <b>Package for Android</b> رو انتخاب کنید</li>
+    <li>فایل APK آماده رو دانلود کنید</li>
+  </ol>
+
+  <h3 style="color:#FFD700;margin:15px 0 10px;">ب) یا با Bubblewrap (روش حرفه‌ای)</h3>
+  <pre>npm install -g @aspect-dev/aspect-cli
+npm install -g @bubblewrap/cli
+bubblewrap init --manifest=https://vanizan.com/manifest.json
+bubblewrap build</pre>
+
+  <h3 style="color:#FFD700;margin:15px 0 10px;">ج) ثبت در گوگل پلی</h3>
+  <ol>
+    <li>حساب <b>Google Play Developer</b> بسازید (25$ یکبار)</li>
+    <li>به <a href="https://play.google.com/console" target="_blank">play.google.com/console</a> برید</li>
+    <li>روی <b>Create App</b> کلیک کنید</li>
+    <li>اطلاعات اپلیکیشن رو وارد کنید:
+      <ul>
+        <li><b>نام:</b> گرداب ثروت ونیزان</li>
+        <li><b>توضیح کوتاه:</b> باورهای قدرتمند ثروتمند شدن در کوتاه‌مدت</li>
+        <li><b>دسته‌بندی:</b> Lifestyle / Education</li>
+        <li><b>زبان:</b> فارسی</li>
+      </ul>
+    </li>
+    <li>اسکرین‌شات‌ها و آیکون 512x512 آپلود کنید</li>
+    <li>سیاست حریم خصوصی بنویسید</li>
+    <li>APK/AAB رو آپلود کنید</li>
+    <li>برای بررسی ارسال کنید (معمولاً 2-7 روز)</li>
+  </ol>
+</div>
+
+<!-- روش 3: کافه بازار -->
+<div class="step">
+  <h2><span class="step-number">3</span>انتشار در کافه بازار ☕</h2>
+  <ol>
+    <li>به <a href="https://developer.cafebazaar.ir" target="_blank">developer.cafebazaar.ir</a> برید</li>
+    <li>حساب توسعه‌دهنده بسازید</li>
+    <li>APK ساخته شده رو آپلود کنید</li>
+    <li>توضیحات، اسکرین‌شات و آیکون آپلود کنید</li>
+    <li>محتوای فارسی و اسلامی به ارزش اپ اضافه کنید</li>
+    <li>برای بررسی ارسال کنید (معمولاً 1-3 روز)</li>
+  </ol>
+  <div class="tip">💡 کافه بازار برای اپ‌های فارسی و محتوای مذهبی/انگیزشی خیلی پرطرفدار است!</div>
+</div>
+
+<!-- روش 4: مایکت -->
+<div class="step">
+  <h2><span class="step-number">4</span>انتشار در مایکت 📦</h2>
+  <ol>
+    <li>به <a href="https://developer.myket.ir" target="_blank">developer.myket.ir</a> برید</li>
+    <li>ثبت‌نام کنید</li>
+    <li>APK رو آپلود کنید</li>
+    <li>مراحل مشابه کافه بازار</li>
+  </ol>
+</div>
+
+<!-- روش 5: شبکه‌های اجتماعی -->
+<div class="step">
+  <h2><span class="step-number">5</span>انتشار در شبکه‌های اجتماعی</h2>
+
+  <h3 style="color:#FFD700;margin:15px 0 10px;">📸 اینستاگرام</h3>
+  <ul>
+    <li>لینک اپ رو در بیو قرار بدید: <code>vanizan.com</code></li>
+    <li>پست‌های Reels از ویژگی‌های اپ بسازید</li>
+    <li>Story با استیکر Link به اپ لینک بدید</li>
+    <li>هشتگ‌ها: #ثروت #موفقیت #ونیزان #باور #قانون_جذب</li>
+  </ul>
+
+  <h3 style="color:#FFD700;margin:15px 0 10px;">📺 یوتیوب / آپارات</h3>
+  <ul>
+    <li>ویدیو آموزشی از اپ بسازید</li>
+    <li>در توضیحات لینک مستقیم قرار بدید</li>
+    <li>تامنیل جذاب با رنگ طلایی و سبز</li>
+  </ul>
+
+  <h3 style="color:#FFD700;margin:15px 0 10px;">📣 تلگرام</h3>
+  <ul>
+    <li>کانال تلگرام بسازید: <code>@vanizan_wealth</code></li>
+    <li>ربات تلگرامی متصل به اپ بسازید</li>
+    <li>Mini App تلگرام بسازید (از PWA می‌تونه استفاده کنه)</li>
+  </ul>
+
+  <h3 style="color:#FFD700;margin:15px 0 10px;">🎵 تیک‌تاک</h3>
+  <ul>
+    <li>ویدیوهای کوتاه انگیزشی با باورهای اپ</li>
+    <li>لینک در بیو</li>
+  </ul>
+
+  <h3 style="color:#FFD700;margin:15px 0 10px;">🌐 سایت‌های اشتراک لینک فارسی</h3>
+  <ul>
+    <li>ویرگول (virgool.io) - مقاله درباره اپ</li>
+    <li>چطور (chotor.ir)</li>
+    <li>نی‌نی سایت و فروم‌های موفقیت</li>
+  </ul>
+</div>
+
+<!-- روش 6: بهینه‌سازی -->
+<div class="step">
+  <h2><span class="step-number">6</span>بهینه‌سازی برای موفقیت بیشتر 🚀</h2>
+  <ul>
+    <li><b>SEO:</b> کلمات کلیدی مثل "باور ثروت"، "قانون جذب" استفاده کنید</li>
+    <li><b>ASO:</b> اپ استور را بهینه کنید با کلمات کلیدی</li>
+    <li><b>تبلیغات:</b> گوگل ادز، تبلیغات اینستاگرامی</li>
+    <li><b>اینفلوئنسر:</b> با بلاگرهای موفقیت و ثروت همکاری کنید</li>
+    <li><b>ایمیل مارکتینگ:</b> لیست مشترکان بسازید</li>
+    <li><b>گواهی‌نامه SSL:</b> حتماً https داشته باشید (برای PWA واجبه)</li>
+  </ul>
+</div>
+
+<!-- متن تبلیغاتی آماده -->
+<div class="step">
+  <h2><span class="step-number">7</span>متن تبلیغاتی آماده 📝</h2>
+  <pre style="white-space:pre-wrap;direction:rtl;text-align:right;">💎 گرداب ثروت ونیزان 💎
+
+باورهای قدرتمند ثروتمند شدن در کوتاه‌مدت
+
+✅ 20 باور قدرتمند با صوت فارسی
+✅ پخش‌کننده موسیقی دلخواه
+✅ تمرین تنفس ثروت
+✅ آفلاین کار می‌کند
+✅ قابل نصب روی موبایل
+
+🔗 همین الان نصب کن:
+🌐 vanizan.com
+📱 گوگل پلی | ☕ کافه بازار | 📦 مایکت
+
+#ثروت #موفقیت #ونیزان #قانون_جذب #باور_مثبت</pre>
+</div>
+
+<!-- لیست چک -->
+<div class="highlight">
+  <h2 style="color:#FFD700;margin-bottom:15px;">✅ لیست چک قبل از انتشار</h2>
+  <ul style="list-style:none;padding-right:0;">
+    <li>☐ دامنه vanizan.com فعال و SSL داره</li>
+    <li>☐ اپ روی هاست آپلود شده</li>
+    <li>☐ manifest.json قابل دسترسی است</li>
+    <li>☐ آیکون‌های 192x192 و 512x512 آماده‌اند</li>
+    <li>☐ اسکرین‌شات‌های باکیفیت آماده‌اند</li>
+    <li>☐ ویدیو معرفی 30 ثانیه‌ای ساخته شده</li>
+    <li>☐ حساب گوگل پلی (25$) فعال شده</li>
+    <li>☐ سیاست حریم خصوصی نوشته شده</li>
+    <li>☐ حساب کافه بازار و مایکت ثبت شده</li>
+    <li>☐ کانال اینستاگرام و تلگرام آماده‌اند</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p style="font-size:1.2em;margin-bottom:10px;">💎 گرداب ثروت ونیزان 💎</p>
+  <p>vanizan.com | موفقیت شما آرزوی ماست</p>
+  <p style="margin-top:15px;font-size:0.9em;">📅 تهیه شده: 2025</p>
+</div>
+
+</div>
+</body>
+</html>
